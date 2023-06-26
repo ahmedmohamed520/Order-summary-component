@@ -1,0 +1,107 @@
+:root {
+    --clr-blue-1: hsl(225, 100%, 94%);
+    --clr-blue-2: hsl(224, 23%, 55%);
+    --clr-blue-3: hsl(245, 75%, 52%);
+    --clr-blue-4: hsl(223, 47%, 23%);
+
+    --clr-off-white: hsl(225, 100%, 98%);
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+body {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    width: 400px;
+    max-width: 90%;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card-image {
+}
+.card-image img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.card-body {
+    padding: 2rem;
+}
+.card-title {
+    font-size: 900;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.card-text {
+    margin-bottom: 1rem;
+    color: var(--clr-blue-4);
+}
+.plan {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1rem;
+    background-color: var(--clr-off-white);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+.plan-icon {
+    background-color: var(--clr-blue-1);
+    border-radius: 50%;
+}
+.plan-icon img {
+    width: 100%;
+}
+.plan-name {
+    font-weight: 900;
+    margin-bottom: 2px;
+}
+.plan-price {
+    color: var(--clr-blue-2);
+}
+.plan-link {
+    display: inline-block;
+    margin-left: auto;
+    font-weight: 700;
+    color: var(--clr-blue-3);
+}
+
+.btn {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    color: var(--clr-blue-2);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.btn-purple {
+    background-color: var(--clr-blue-3);
+    color: #fff;
+    box-shadow: 0 10px 20px hsl(224, 23%, 55%, 0.5);
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url("images/pattern-background-mobile.svg");
+        background-size: cover;
+        background-position: top;
+    }
+}
